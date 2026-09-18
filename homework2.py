@@ -1,7 +1,7 @@
 class BankAccount:
     def __init__(self, a, b):
-        self.a = a  # номер рахунку
-        self.b = b  # баланс
+        self.a = a
+        self.b = b
 
     def deposit(self, s):
         self.b = self.b + s
@@ -13,7 +13,6 @@ class BankAccount:
             print("Недостатньо коштів!")
 
 
-# Приклад роботи:
 acc = BankAccount("123", 500)
 acc.deposit(200)
 acc.withdraw(100)
